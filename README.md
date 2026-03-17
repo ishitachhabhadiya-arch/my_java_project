@@ -1,6 +1,6 @@
-# 📚 Library Management System (OOP Assignment 3)
+# Library Management System (OOP Assignment 3)
 
-## 📌 Project Description
+## Project Description
 
 This project is a simple Library Management System developed using Java and Object-Oriented Programming (OOP) concepts.
 
@@ -16,7 +16,7 @@ This project is an improved version of Assignment 2, with added user interaction
 
 ---
 
-## ⚙️ Features
+## Features
 
 * Dynamic user input using Scanner
 * Object-Oriented structure (classes and objects)
@@ -25,7 +25,7 @@ This project is an improved version of Assignment 2, with added user interaction
 
 ---
 
-## 🧩 Classes Used
+## Classes Used
 
 * `app` → Main class that runs the program
 * `member` → Stores member details and actions
@@ -35,21 +35,21 @@ This project is an improved version of Assignment 2, with added user interaction
 
 ---
 
-## ⚠️ Exception Handling Implemented
+## Exception Handling Implemented
 
 The program uses `try-catch` blocks to handle errors and prevent crashes.
 
 ### Examples:
 
 * If the user enters text instead of a number for member ID
-  → The program shows: **"Invalid member input!"**
+  → The program shows: "Invalid member input!"
 
 * If incorrect input is entered
   → The program catches the error and continues running safely
 
 ---
 
-## ▶️ How to Run the Program
+## How to Run the Program
 
 1. Open the project in any Java IDE (e.g., IntelliJ, Eclipse, VS Code)
 2. Compile all the classes
@@ -58,10 +58,11 @@ The program uses `try-catch` blocks to handle errors and prevent crashes.
 
 ---
 
-## ✅ Conclusion
+## Conclusion
 
 This project demonstrates:
 
 * Use of OOP concepts
 * Handling user input dynamically
 * Using exception handling to make the program more robust and user-friendly
+
