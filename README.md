@@ -1,18 +1,67 @@
-## Getting Started
+# 📚 Library Management System (OOP Assignment 3)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## 📌 Project Description
 
-## Folder Structure
+This project is a simple Library Management System developed using Java and Object-Oriented Programming (OOP) concepts.
 
-The workspace contains two folders by default, where:
+It allows users to:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+* Enter member details
+* Enter book details
+* Enter librarian details
+* View information about members, books, and librarians
+* Perform basic actions like borrowing and returning books
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+This project is an improved version of Assignment 2, with added user interaction and error handling.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+---
 
-## Dependency Management
+## ⚙️ Features
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+* Dynamic user input using Scanner
+* Object-Oriented structure (classes and objects)
+* Exception handling using try-catch blocks
+* Simple and user-friendly console output
+
+---
+
+## 🧩 Classes Used
+
+* `app` → Main class that runs the program
+* `member` → Stores member details and actions
+* `book` → Stores book details and actions
+* `librarian` → Stores librarian information
+* `library` → Displays library services
+
+---
+
+## ⚠️ Exception Handling Implemented
+
+The program uses `try-catch` blocks to handle errors and prevent crashes.
+
+### Examples:
+
+* If the user enters text instead of a number for member ID
+  → The program shows: **"Invalid member input!"**
+
+* If incorrect input is entered
+  → The program catches the error and continues running safely
+
+---
+
+## ▶️ How to Run the Program
+
+1. Open the project in any Java IDE (e.g., IntelliJ, Eclipse, VS Code)
+2. Compile all the classes
+3. Run the `app.java` file
+4. Enter the required details when prompted
+
+---
+
+## ✅ Conclusion
+
+This project demonstrates:
+
+* Use of OOP concepts
+* Handling user input dynamically
+* Using exception handling to make the program more robust and user-friendly
