@@ -9,81 +9,52 @@ public class app {
         System.out.println("===== LIBRARY MANAGEMENT SYSTEM =====\n");
 
         // MEMBER
-        member m = null;
-        try {
-            System.out.print("Enter member name: ");
-            String name = sc.nextLine();
+        System.out.print("Enter member name: ");
+        String name = sc.nextLine();
 
-            System.out.print("Enter member ID: ");
-            int id = sc.nextInt();
-            sc.nextLine(); // clear buffer
+        System.out.print("Enter member ID: ");
+        int id = sc.nextInt();
+        sc.nextLine();
 
-            m = new member(name, id);
-
-        } catch (Exception e) {
-            System.out.println("Invalid member input!");
-            sc.nextLine();
-        }
+        member m = new member(name, id);
 
         // BOOK
-        book b = null;
-        try {
-            System.out.print("Enter book name: ");
-            String bookName = sc.nextLine();
+        System.out.print("Enter book name: ");
+        String bookName = sc.nextLine();
 
-            b = new book(bookName);
-
-        } catch (Exception e) {
-            System.out.println("Invalid book input!");
-        }
+        book b = new book(bookName);
 
         // LIBRARIAN
-        librarian l = null;
-        try {
-            System.out.print("Enter librarian name: ");
-            String libName = sc.nextLine();
+        System.out.print("Enter librarian name: ");
+        String libName = sc.nextLine();
 
-            System.out.print("Enter librarian ID: ");
-            String libId = sc.nextLine();
+        System.out.print("Enter librarian ID: ");
+        String libId = sc.nextLine();
 
-            l = new librarian(libName, libId);
-
-        } catch (Exception e) {
-            System.out.println("Invalid librarian input!");
-        }
+        librarian l = new librarian(libName, libId);
 
         // LIBRARY
         library lib = new library();
 
         System.out.println();
 
-        // DISPLAY MEMBER
-        if (m != null) {
-            System.out.println("--- MEMBER ---");
-            m.displayInfo();
-            m.borrowBook();
-            System.out.println();
-        }
+        // MEMBER
+        System.out.println("--- MEMBER ---");
+        m.displayInfo();
+        m.borrowBook();
 
-        // DISPLAY BOOK
-        if (b != null) {
-            System.out.println("--- BOOK ---");
-            b.showBook();
-            b.borrowBook();
-            b.returnBook();
-            System.out.println();
-        }
+        // BOOK
+        System.out.println("--- BOOK ---");
+        b.showBook();
+        b.borrowBook();
+        b.returnBook();
 
-        // DISPLAY LIBRARIAN
-        if (l != null) {
-            System.out.println("--- LIBRARIAN ---");
-            l.displayInfo();
-            System.out.println();
-        }
-
-        // DISPLAY LIBRARY
+        // LIBRARY (NEW FEATURES)
         System.out.println("--- LIBRARY ---");
-        lib.showService();
+        lib.addBook(b);
+        lib.showBooks();
+        lib.saveToFile();
+        lib.loadFromFile();
 
         sc.close();
     }
